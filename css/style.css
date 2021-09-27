@@ -60,7 +60,7 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background-color: var(--link-color);
   color: white;
   width: 100%;
 }
@@ -72,7 +72,7 @@ footer {
   letter-spacing: 1px;
   padding-right: 0.75em;
   font-weight: bold;
-  color: white;
+  color: var(--bg-color);
 }
 
 .header-wrapper h2 {
