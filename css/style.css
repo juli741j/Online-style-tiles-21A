@@ -66,27 +66,32 @@ footer {
 }
 
 .header-wrapper h1 {
+  font-family: var(--paragraph-font);
   font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   padding-right: 0.75em;
   font-weight: bold;
   color: white;
 }
 
 .header-wrapper h2 {
+  font-family: var(--paragraph-font);
   font-size: 1.6em;
   color: rgba(255, 255, 255, 0.95);
   font-weight: bold;
   margin: var(--white-space) 0;
+  text-transform: uppercase;
 }
 
 .header-wrapper h3 {
+  font-family: var(--paragraph-font);
   font-size: 1.2rem;
   font-style: italic;
 }
 
 .header-wrapper h4 {
+  font-family: var(--paragraph-font);
   font-size: 0.8rem;
 }
 
@@ -100,7 +105,9 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
+  text-transform: uppercase;
+  font-family: var(--paragraph-font);
+  /* font-style: italic; */
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
@@ -115,6 +122,7 @@ ul {
   margin-right: 5vw;
   height: 15vw;
   width: 20%;
+  border: 1px solid;
 }
 
 ul li:last-child {
@@ -172,6 +180,30 @@ ul li:last-child {
   display: block;
   /*margin-right: 5vw;*/
   margin-bottom: 1rem;
+}
+
+.fotostil li {
+  height: 11vw;
+  width: 40%;
+  margin-right: 2vw;
+}
+
+.foto-1 {
+  background: url(../img/flaske\ og\ kasse-kopi.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.foto-2 {
+  background: url(../img/billede\ med\ baggrund\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.foto-3 {
+  background: url(../img/helbred\ billede\ 2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .btns {
