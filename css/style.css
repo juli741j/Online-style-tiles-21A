@@ -1,18 +1,12 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
 * {
   box-sizing: border-box;
 }
-
-/* THIS IS ALL meant for editing. You might want to do it differently,
-name the variables differently,
-use the fonts in other ways in the font hierarchy etc. */
-
-/* change / delete some of these - note: all variables are listed twice */
 
 :root {
   /* --bg-color: red; */
@@ -22,8 +16,8 @@ use the fonts in other ways in the font hierarchy etc. */
   --color-4: hotpink;
   --color-5: rebeccapurple;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "Berkshire Swash", cursive;
+  --secondary-font: "Vidaloka", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -185,23 +179,30 @@ ul li:last-child {
 }
 
 button {
-  padding: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 4px;
-  background: var(--link-color);
+  /* background: var(--link-color); */
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
+  font-family: var(--secondary-font);
   letter-spacing: 1px;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
+  /* text-transform: uppercase; */
+  /* text-shadow: 0px -1px 0px #0374a0; */
   transition: all 0.2s ease;
   cursor: pointer;
   /* margin: 0 1rem 0 0; */
+  border: solid 3px #97a671;
+  font-size: 1.5rem;
 }
-
+.primary-button {
+  background: var(--link-color);
+  color: var(--bg-color);
+}
 .secondary-button {
-  background: var(--color-5);
+  background: var(--bg-color);
 }
 
 button:focus,
@@ -212,8 +213,9 @@ button:focus-within {
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  background: var(--bg-color);
+  color: var(--link-color);
+  /* transform: scale(3) rotate(40deg); */
 }
 
 button:active {
@@ -225,6 +227,7 @@ button:active {
 }
 
 .h1-sample {
+  font-family: var(--primary-font);
   font-size: 2.4rem;
   font-weight: bold;
 }
